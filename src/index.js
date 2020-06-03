@@ -1,4 +1,4 @@
-export const asyncDispatchMiddleware = (store) => (next) => (action) => {
+const asyncDispatchMiddleware = (store) => (next) => (action) => {
   let syncActivityFinished = false;
   let actionQueue = [];
 
@@ -21,3 +21,5 @@ export const asyncDispatchMiddleware = (store) => (next) => (action) => {
   syncActivityFinished = true;
   flushQueue();
 };
+
+export default asyncDispatchMiddleware;
