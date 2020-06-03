@@ -1,6 +1,6 @@
 {
   "name": "async-dispatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/IbrahimShamma99/asynDispatch-middleware.git"
   },
+  "files":[
+    "src"
+  ],
   "author": "ibrahim abushammah",
   "license": "ISC",
   "bugs": {
