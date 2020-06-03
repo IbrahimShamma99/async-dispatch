@@ -13,6 +13,10 @@
   "files":[
     "src"
   ],
+  "keywords": [
+    "redux",
+    "middleware"
+  ],
   "author": "ibrahim abushammah",
   "license": "ISC",
   "bugs": {
