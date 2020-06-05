@@ -66,7 +66,7 @@ Meanwhile you are leveraging your store as usual as you used to do
   }
   //Inside your component
   SubmitHandler = () => {
-      return props.submit(() => {});
+      return props.submit();
   }
 ```
 
