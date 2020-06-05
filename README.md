@@ -37,7 +37,8 @@ Then applying this middleware is simple as
 
 ```js
 const LoginReducer = (state = intialState, action) => {
-      login(action.userData).then((data) => {
+    //actionTypes.LOGIN
+      login(userData).then((data) => {
         if (data.error) {
           action.asyncDispatch({
             type: actionTypes.ERROR,
@@ -55,6 +56,20 @@ const LoginReducer = (state = intialState, action) => {
 })
 
 ```
+Meanwhile you are leveraging your store as usual as you used to do 
+```js
+
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      submit: () => dispatch({ type: actionTypes.LOGIN })
+      }
+  }
+  //Inside your component
+  SubmitHandler = () => {
+      return props.submit(() => {});
+  }
+```
+
 
 ## To Do
 
