@@ -70,7 +70,6 @@ Meanwhile you are leveraging your store as usual as you used to do
   }
 ```
 
-
 ## To Do
 
 - [ ] Adding typeScript types
